@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MoodTunes - Music for Your Mood & Activities</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen">
+    <!-- Header -->
+    <header class="glass-effect p-4 md:p-6 mb-6 md:mb-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl md:text-3xl  font-bold gradient-text">Fluff-Tunes</h1>
+            
+        </div>
+    </header>
+
+    <main class="container mx-auto px-3 md:px-4">
+        <!-- Mood Selection Section -->
+        <section class="mb-8 md:mb-12 text-center fade-in">
+            <h2 class="text-2xl md:text-4xl font-bold mb-6 md:mb-8">How are you feeling today?</h2>
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-4 mb-6 md:mb-8">
+                <div class="mood-card glass-effect p-4 md:p-6 rounded-xl md:rounded-2xl text-center cursor-pointer" data-mood="happy">
+                    <i class="fas fa-laugh-beam text-3xl md:text-4xl text-yellow-400 mb-2 md:mb-3"></i>
+                    <p class="font-semibold text-sm md:text-base">Happy</p>
+                </div>
+                <div class="mood-card glass-effect p-4 md:p-6 rounded-xl md:rounded-2xl text-center cursor-pointer" data-mood="sad">
+                    <i class="fas fa-sad-tear text-3xl md:text-4xl text-blue-400 mb-2 md:mb-3"></i>
+                    <p class="font-semibold text-sm md:text-base">Sad</p>
+                </div>
+                <div class="mood-card glass-effect p-4 md:p-6 rounded-xl md:rounded-2xl text-center cursor-pointer" data-mood="energetic">
+                    <i class="fas fa-bolt text-3xl md:text-4xl text-orange-400 mb-2 md:mb-3"></i>
+                    <p class="font-semibold text-sm md:text-base">Energetic</p>
+                </div>
+                <div class="mood-card glass-effect p-4 md:p-6 rounded-xl md:rounded-2xl text-center cursor-pointer" data-mood="relaxed">
+                    <i class="fas fa-spa text-3xl md:text-4xl text-green-400 mb-2 md:mb-3"></i>
+                    <p class="font-semibold text-sm md:text-base">Relaxed</p>
+                </div>
+                <div class="mood-card glass-effect p-4 md:p-6 rounded-xl md:rounded-2xl text-center cursor-pointer" data-mood="focused">
+                    <i class="fas fa-brain text-3xl md:text-4xl text-indigo-400 mb-2 md:mb-3"></i>
+                    <p class="font-semibold text-sm md:text-base">Focused</p>
+                </div>
+                <div class="mood-card glass-effect p-4 md:p-6 rounded-xl md:rounded-2xl text-center cursor-pointer" data-mood="romantic">
+                    <i class="fas fa-heart text-3xl md:text-4xl text-red-400 mb-2 md:mb-3"></i>
+                    <p class="font-semibold text-sm md:text-base">Romantic</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Activity Cards Section -->
+        <section class="mb-8 md:mb-12 fade-in">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6 md:mb-8 text-center">What are you doing?</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4 md:gap-6">
+                <div class="activity-card glass-effect p-4 md:p-6 rounded-xl md:rounded-2xl cursor-pointer" data-activity="cooking">
+                    <div class="text-center mb-3 md:mb-4">
+                        <i class="fas fa-utensils text-2xl md:text-3xl text-orange-400"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold text-center mb-1 md:mb-2">Cooking</h3>
+                    <p class="text-xs md:text-sm text-gray-200 text-center">Perfect tunes for kitchen adventures</p>
+                </div>
+                <div class="activity-card glass-effect p-4 md:p-6 rounded-xl md:rounded-2xl cursor-pointer" data-activity="working">
+                    <div class="text-center mb-3 md:mb-4">
+                        <i class="fas fa-laptop text-2xl md:text-3xl text-blue-400"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold text-center mb-1 md:mb-2">Working</h3>
+                    <p class="text-xs md:text-sm text-gray-200 text-center">Focus and productivity boosters</p>
+                </div>
+                <div class="activity-card glass-effect p-4 md:p-6 rounded-xl md:rounded-2xl cursor-pointer" data-activity="exercising">
+                    <div class="text-center mb-3 md:mb-4">
+                        <i class="fas fa-running text-2xl md:text-3xl text-green-400"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold text-center mb-1 md:mb-2">Exercising</h3>
+                    <p class="text-xs md:text-sm text-gray-200 text-center">High-energy workout anthems</p>
+                </div>
+                <div class="activity-card glass-effect p-4 md:p-6 rounded-xl md:rounded-2xl cursor-pointer" data-activity="studying">
+                    <div class="text-center mb-3 md:mb-4">
+                        <i class="fas fa-book text-2xl md:text-3xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold text-center mb-1 md:mb-2">Studying</h3>
+                    <p class="text-xs md:text-sm text-gray-200 text-center">Concentration and learning focus</p>
+                </div>
+                <div class="activity-card glass-effect p-4 md:p-6 rounded-xl md:rounded-2xl cursor-pointer" data-activity="studying">
+                    <div class="text-center mb-3 md:mb-4">
+                        <i class="fas fa-book text-2xl md:text-3xl text-purple-400"></i>
+                    </div>
+                    <h3 class="text-lg md:text-xl font-semibold text-center mb-1 md:mb-2">Coding</h3>
+                    <p class="text-xs md:text-sm text-gray-200 text-center">Concentration and focus when coding </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Generate Music Button -->
+        <section class="text-center mb-6 md:mb-8 fade-in">
+            <button id="generateMusicBtn" class="bg-white text-purple-600 px-6 py-3 md:px-8 md:py-4 rounded-full font-bold text-lg md:text-xl hover:bg-purple-100 transition transform hover:scale-105 disabled:opacity-50 disabled:cursor-not-allowed">
+                <i class="fas fa-music mr-2 md:mr-3"></i>Generate Music & Show Reels
+            </button>
+        </section>
+
+        <!-- Reels Section (Hidden initially) -->
+        <section id="reelsSection" class="hidden fade-in mb-8 md:mb-12">
+            <h2 class="text-2xl md:text-3xl font-bold mb-4 md:mb-6 text-center">Your Mood & Activity Mix</h2>
+            <div class="glass-effect rounded-xl md:rounded-2xl p-3 md:p-4 max-h-96 overflow-y-auto">
+                <div id="reelContent">
+                    <!-- Content will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Video Player (Hidden initially) -->
+        <div id="videoPlayer" class="fixed top-0 left-0 w-full h-full bg-black/90 hidden z-50 flex items-center justify-center p-3 md:p-4">
+            <div class="relative w-full max-w-4xl aspect-video rounded-lg md:rounded-xl overflow-hidden shadow-lg">
+                <button onclick="closeVideo()" class="absolute top-2 right-2 z-10 text-white text-2xl md:text-3xl hover:text-red-500 bg-black/50 rounded-full w-8 h-8 md:w-10 md:h-10 flex items-center justify-center">
+                    &times;
+                </button>
+                <iframe id="youtubeIframe" class="w-full h-full" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <!-- Control Buttons -->
+        <div class="fixed bottom-4 left-1/2 transform -translate-x-1/2 glass-effect p-3 md:p-4 hidden" id="controlButtons">
+            <div class="flex space-x-3 md:space-x-4">
+                <button onclick="playPrevious()" class="bg-white text-purple-600 p-2 md:p-3 rounded-full hover:bg-purple-100 text-sm md:text-base">
+                    <i class="fas fa-step-backward"></i>
+                </button>
+                <button onclick="togglePlayPause()" class="bg-purple-600 text-white p-3 md:p-4 rounded-full hover:bg-purple-700 text-base md:text-lg">
+                    <i class="fas fa-play" id="playPauseIcon"></i>
+                </button>
+                <button onclick="playNext()" class="bg-white text-purple-600 p-2 md:p-3 rounded-full hover:bg-purple-100 text-sm md:text-base">
+                    <i class="fas fa-step-forward"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="glass-effect mt-8 md:mt-12 p-4 md:p-6 text-center">
+        <p class="text-sm md:text-base">© 2024 Fluff-Tunes. Music for every moment of your life.</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
+
